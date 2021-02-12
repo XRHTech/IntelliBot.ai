@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.IntelliBotTitle{
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Button {  
+  background: linear-gradient(to right, rgb(80, 77, 77), black);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  display: inline-block;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Para{
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+   border-radius: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+
+.Upper{
+    color: black;
+    height: 251px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.container .box{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    margin: 20px;
+    background-color: rgb(212, 218, 223);
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    overflow: hidden;
+}
+
+.container .box .item{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15%;
+
+}
+.box{
+    transition-duration: 2s;
+}
+
+.box:hover{
+    box-shadow: 5px 10px #888888;
+}
+
+.perspective{
+    border-radius: 15%;
+}
+
+.footer{
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Copyright{
+    font-style: italic;
+    font-size: small;
+    font-family: Roboto;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}

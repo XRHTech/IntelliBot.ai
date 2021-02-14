@@ -1,38 +1,38 @@
-body{
-    margin: 0;
-    padding: 0;
+.all {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .IntelliBotTitle{
-    font-family: Roboto;
+    font-family: Product Sans, bold;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.Button {  
-  background: linear-gradient(to right, rgb(80, 77, 77), black);
-  border: none;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  display: inline-block;
-  font-family: Roboto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .Para{
-    font-family: Roboto;
+    font-family: Product Sans, bold;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.Youcan {
+    font-family: Product Sans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.Beware {
+    font-family: Product Sans, bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 10px;
 }
 
 .logo{
@@ -47,62 +47,112 @@ body{
     height: 251px;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px, auto;
+    background: #fff;
 }
 
-.container .box{
+.container .box {
     position: relative;
-    width: 350px;
-    padding: 40px;
-    margin: 20px;
-    background-color: rgb(212, 218, 223);
-    border-radius: 7px;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: rgb(243, 70, 70);
+    float: left;
+    margin: 15px;
     box-sizing: border-box;
-    font-family: Roboto;
     overflow: hidden;
+    border-radius: 10px;
+
 }
 
-.container .box .item{
-    position: relative;
+.container .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 15%;
-
-}
-.box{
-    transition-duration: 2s;
+    border-radius: 50px;
 }
 
-.box:hover{
-    box-shadow: 5px 10px #888888;
+.container .box .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5;
+    color: #fff
 }
 
-.perspective{
-    border-radius: 15%;
+.container .box .icon .fa:hover{
+    font-size: 40px;
 }
+
+.container .box .content {
+    position: absolute;
+    top: 100%;
+    height: calc(100%-100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Product Sans, bold;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .box:hover .content {
+
+    top: 60px;
+    opacity: 1;
+
+}
+
+.container .box:nth-child(3) .icon {
+    background: #319635
+}
+
+.container .box:nth-child(3) {
+    background: #4caf50
+}
+
+.container .box:nth-child(2) .icon {
+    background: #f01f1f
+}
+
+.container .box:nth-child(2) {
+    background: #eb3737
+}
+
+
+.container .box:nth-child(1) .icon {
+    background: #2fb3f0
+}
+
+.container .box:nth-child(1) {
+    background: #32edf3
+}
+
 
 .footer{
-    font-family: Roboto;
+    font-family: Product Sans, bold;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-style: italic;
 }
 
-.Copyright{
-    font-style: italic;
-    font-size: small;
-    font-family: Roboto;
-    font-family: Roboto;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
